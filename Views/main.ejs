@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CF Progress Observer</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        
+        <style>
+            .fa {
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none !important;
+            border-radius: 50%;
+            }
+            .fa-small {
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none !important;
+            border-radius: 50%;
+            }
+        </style>
+    </head>
+<body>
+    <nav class="navbar navbar-dark bg-primary" style="background-color: #e3f2fd; ">
+        <!-- Navbar content -->
+        
+        <a class="navbar-brand fs-1 h2" href="/">CF Progress Observer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">Contact me</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <a style="text-decoration: none;" href="https://bellatrix-tech.netlify.app/"><i class="bi bi-link"></i>Bellatrix Website</a>
+          </span>
+        </div>
+      </nav>
+      <br>
+       <p class="h1 text-center" style="color:black; border-radius: 2rpm; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CF Progress Observer</p>
+
+      <div class="container ">
+          <br>
+          <% if(f==2) {%>
+            <div class=" rounded-end border border-5 alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>No data found for the username.</strong>
+            </div>
+          <%}%>
+        <% if(typeof(user) == 'undefined'){ %>
+            <div class="card text-center mx-auto" style="background-color:aliceblue; width: 45rem; height: 20rem;">
+                <div class="card-body align-items-center d-flex justify-content-center">
+                    <form class="form-group" method="POST" action="/users" id="userform">
+                        <input type='text' name="handle" class="placeholder col-12 placeholder-wave form-control" id="handle" placeholder="Enter Codeforces username" style="margin: auto; width:30rem">
+                        <br>
+                        <button type="submit" class="btn btn-primary"> Search </button>
+                    </form>
+                </div>
+            </div>
+        <% } %>
+
+        <br>
+        <hr>
+          
+        
+        <div class="card">
+          
+          <div class="card-body">
+            <blockquote class="blockquote mb-0 text-center">
+              <p>The only real progress lies in learning to be wrong all alone.</p>
+              <footer class="blockquote-footer"><cite title="Source Title">Abert Camus</cite></footer>
+            </blockquote>
+          </div>
+        <div class="text-center ">
+          <p class="fst-italic">Created  by  Divya Porwal</p>
+          
+            <div class="">
+            <br>
+            <hr>
+            <a href="https://github.com/divyaporwal-hub" class="fa fa-github"></a>
+            &nbsp;
+            <a href="https://www.linkedin.com/in/divya-porwal-99604a204" class="fa fa-linkedin"></a>
+            &nbsp;
+            <a href="mailto:divyaporwal100@gmail.com" class="fa fa-envelope"></a>
+            &nbsp;
+            </div>
+        </div>
+      <br>
+</body>
+</html>
+
+
+
+
