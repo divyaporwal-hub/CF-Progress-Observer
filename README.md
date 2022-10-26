@@ -7,4 +7,4 @@ Use Codeforces API to sort submission data on various parameters to monitor your
   <li>Open the terminal and run 'npm i' to install the dependencies.</li>
   <li>Run 'nodemon' to launch the app.</li>
 </ul>
-The project is live <a href = "">here</a>.
+The project is live <a href = "https://cf-progress-observer.herokuapp.com/">here</a>.
