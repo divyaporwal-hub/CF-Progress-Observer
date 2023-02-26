@@ -1,1 +1,3 @@
-web: node index.js
+
+web: /go-server-web
+worker: /go-server-worker
